@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.samgavis.chirpapp"
+    android:versionCode="1"
+    android:versionName="0.1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+   	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/chirp_app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.samgavis.chirpapp.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="oauth" android:host="chirpapp"/>
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.samgavis.chirpapp.ChirpAppActivity"
+            android:label="@string/app_name">
+        </activity>
+    </application>
+     
+    <meta-data
+         android:name="com.google.android.urlshortener.API_KEY"
+         android:value="AIzaSyAATmptsTK8V_Fkjz0YWO1evZZk3vt1ZJo"/>
+
+</manifest>

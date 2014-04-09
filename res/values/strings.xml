@@ -1,0 +1,14 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Chirp App</string>
+    <string name="textbox_hint">Enter your Tweet here... e.g. Trying out @tryChirpApp and it rocks!</string>
+    <string name="compute_button_text">Compute</string>
+	<string name="tweet_button_text">Tweet</string>
+	<string name="username_text">\@Username</string>
+	
+	<color name="twitter_blue">#55acee</color>
+	<string name="undo_button_text">Undo!</string>
+	<string name="logout_text">Logout</string>
+	<string name="login_text">Login to Twitter!</string>
+    
+</resources>
